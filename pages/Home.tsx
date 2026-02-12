@@ -7,7 +7,7 @@ import { SKILLS } from '../constants';
 const Home: React.FC = () => {
   return (
     <div className="fade-in bg-soft-glow">
-      {/* Hero Section - Updated with new professional portrait */}
+      {/* Hero Section - Updated with enhanced animation */}
       <section className="pt-32 pb-20 md:pt-48 md:pb-32 relative overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-50/40 rounded-full blur-[120px] -z-10"></div>
@@ -70,22 +70,32 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* Right Column: Photo - High-quality Headshot Integration */}
+            {/* Right Column: Photo - Advanced Animation Wrapper */}
             <div className="lg:col-span-5 order-1 lg:order-2 flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-[340px] md:max-w-[420px]">
-                {/* Container using a slightly softer rotate and clean white border to pop against the background */}
-                <div className="aspect-[2/3] md:aspect-[3/4.5] bg-white rounded-[4rem] overflow-hidden shadow-[0_40px_80px_rgba(37,99,235,0.1)] border-[6px] border-white group relative transition-all duration-700 hover:scale-[1.02]">
+              <div className="relative w-full max-w-[340px] md:max-w-[420px] group">
+                {/* 
+                   Animation Logic:
+                   - Starts at scale-100
+                   - On hover: Scale up slightly, lift up (-translate-y-4), and rotate slightly (rotate-2)
+                   - Transition is a long 700ms ease for a "floaty" cinematic feel.
+                */}
+                <div className="aspect-[2/3] md:aspect-[3/4.5] bg-white rounded-[4rem] overflow-hidden shadow-[0_30px_60px_rgba(37,99,235,0.08)] border-[6px] border-white relative transition-all duration-700 ease-out group-hover:scale-[1.04] group-hover:-translate-y-6 group-hover:rotate-2 group-hover:shadow-[0_60px_100px_rgba(37,99,235,0.15)]">
                   <img 
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" 
                     alt="Lorenzo Santarelli Profile"
-                    className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
-                  {/* Subtle clean gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-500/5 to-transparent"></div>
+                  
+                  {/* Glare Effect: A radial gradient that only appears on hover */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.2)_0%,transparent_50%)]"></div>
+                  
+                  {/* Subtle color grading overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent opacity-60"></div>
                 </div>
-                {/* High-end visual accents */}
-                <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-[80px] -z-10 animate-pulse"></div>
-                <div className="absolute -top-10 -left-10 w-28 h-28 bg-accent/5 rounded-full blur-[60px] -z-10"></div>
+
+                {/* Decorative background blurs that follow the hover motion subtly */}
+                <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-[80px] -z-10 transition-transform duration-700 group-hover:translate-x-4 group-hover:translate-y-4"></div>
+                <div className="absolute -top-10 -left-10 w-28 h-28 bg-accent/5 rounded-full blur-[60px] -z-10 transition-transform duration-700 group-hover:-translate-x-4 group-hover:-translate-y-4"></div>
               </div>
             </div>
 
