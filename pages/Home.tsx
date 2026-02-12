@@ -81,7 +81,7 @@ const Home: React.FC = () => {
                 */}
                 <div className="aspect-[2/3] md:aspect-[3/4.5] bg-white rounded-[4rem] overflow-hidden shadow-[0_30px_60px_rgba(37,99,235,0.08)] border-[6px] border-white relative transition-all duration-700 ease-out group-hover:scale-[1.04] group-hover:-translate-y-6 group-hover:rotate-2 group-hover:shadow-[0_60px_100px_rgba(37,99,235,0.15)]">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" 
+                    src="/immagineprofilonew26.png"
                     alt="Lorenzo Santarelli Profile"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
