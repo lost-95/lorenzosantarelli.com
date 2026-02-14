@@ -27,7 +27,7 @@ const Home: React.FC = () => {
               {/* Main Heading */}
               <div className="mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-slate-300 tracking-tight mb-3">
-                  Data Analyst (early-career)
+                  Junior Data Analyst / Computer Science Student
                 </h2>
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 tracking-tighter leading-[0.9] mb-6">
                   Lorenzo <br /> Santarelli
