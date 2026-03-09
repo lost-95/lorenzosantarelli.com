@@ -76,12 +76,12 @@ const Resume: React.FC = () => {
                 Profile
               </h3>
               <p className="text-slate-600 leading-relaxed font-medium">
-                Early-career Data Analyst with a software background and hands-on
-                practice in SQL and Python: Data Cleaning, EDA, and reporting basics (Excel/Power BI).
-                I’m comfortable working with relational databases and
-                translating findings into clear, business-friendly summaries.
-                Currently seeking a Junior Data Analyst role to grow in analytics
-                and reporting.
+                Early-career Data Analyst with a software background and
+                hands-on practice in SQL and Python: Data Cleaning, EDA, and
+                reporting basics (Excel/Power BI). I’m comfortable working with
+                relational databases and translating findings into clear,
+                business-friendly summaries. Currently seeking a Junior Data
+                Analyst role to grow in analytics and reporting.
               </p>
             </div>
 
@@ -116,40 +116,16 @@ const Resume: React.FC = () => {
                       modules with dev/support teams.
                     </li>
                     <li>
-                      Wrote and refined SQL queries to extract data for reporting
-                      and troubleshooting.
+                      Wrote and refined SQL queries to extract data for
+                      reporting and troubleshooting.
                     </li>
                     <li>
-                      Worked with large relational databases and followed internal
-                      processes (tickets, testing, documentation).
+                      Worked with large relational databases and followed
+                      internal processes (tickets, testing, documentation).
                     </li>
                     <li>
-                      Learned and followed the company’s development workflow (ticketing, testing, releases, documentation).
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Projects */}
-                <div className="relative pl-8">
-                  <div class="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-primary/50 border-4 border-white"></div>
-                  <div className="mb-3">
-                    <span className="text-xs font-black text-primary uppercase tracking-widest">
-                      Jul 2024 – Present
-                    </span>
-                    <h4 className="text-xl font-bold text-gray-900">
-                      Data Analytics Projects (Personal / Freelance)
-                    </h4>
-                    <p className="text-gray-500 font-bold">Personal Portfolio</p>
-                  </div>
-                  <ul className="list-disc list-outside ml-4 text-gray-600 space-y-2 text-sm leading-relaxed">
-                    <li>
-                      Built portfolio projects using SQL and Python: data cleaning, EDA, and simple reporting.
-                    </li>
-                    <li>
-                      Wrote short summaries focused on KPIs, key factors, and next-step recommendations.
-                    </li>
-                    <li>
-                      Used reproducible workflows (Jupyter Notebooks, Git, Documentation).
+                      Learned and followed the company’s development workflow
+                      (ticketing, testing, releases, documentation).
                     </li>
                   </ul>
                 </div>
@@ -159,7 +135,7 @@ const Resume: React.FC = () => {
                   <div class="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-primary/50 border-4 border-white"></div>
                   <div className="mb-3">
                     <span className="text-xs font-black text-primary uppercase tracking-widest">
-                      Mar 2023 – Jul 2024
+                      Mar 2023 – Jul 2025
                     </span>
                     <h4 className="text-xl font-bold text-gray-900">
                       Project Coordinator — Startup
@@ -168,17 +144,48 @@ const Resume: React.FC = () => {
                   </div>
                   <ul className="list-disc list-outside ml-4 text-gray-600 space-y-2 text-sm leading-relaxed">
                     <li>
-                      Coordinated day-to-day delivery in a small team; translated requirements into clear tasks, priorities, and deadlines.
+                      Coordinated day-to-day delivery in a small team;
+                      translated requirements into clear tasks, priorities, and
+                      deadlines.
                     </li>
                     <li>
-                      Supported data-informed decisions with basic analysis of internal/public datasets (trends, simple KPIs, summary reporting).
+                      Supported data-informed decisions with basic analysis of
+                      internal/public datasets (trends, simple KPIs, summary
+                      reporting).
                     </li>
                     <li>
-                      Tracked tasks and blockers and shared regular progress updates with stakeholders.
+                      Tracked tasks and blockers and shared regular progress
+                      updates with stakeholders.
                     </li>
                   </ul>
                 </div>
               </div>
+            </div>
+
+            {/* Freelance */}
+            <div className="relative pl-8">
+              <div class="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-primary/50 border-4 border-white"></div>
+              <div className="mb-3">
+                <span className="text-xs font-black text-primary uppercase tracking-widest">
+                  2020 – Mar 2022
+                </span>
+                <h4 className="text-xl font-bold text-gray-900">
+                  IT Consultant / Web Developer
+                </h4>
+                <p className="text-gray-500 font-bold">Freelance</p>
+              </div>
+              <ul className="list-disc list-outside ml-4 text-gray-600 space-y-2 text-sm leading-relaxed">
+                <li>
+                  Provided IT Consulting and Web Development services for small businesses, working closely with clients to translate business
+requirements into technical solutions, mostly on the digital presence of their businesses
+                </li>
+                <li>
+                  Supported basic data handling and reporting activities related to digital products. 
+                </li>
+                <li>
+                  Gained Experience in project coordination and collaborations.
+                </li>
+              </ul>
             </div>
 
             {/* Projects */}
@@ -194,15 +201,10 @@ const Resume: React.FC = () => {
 
                 <ul className="list-disc list-outside ml-6 text-sm text-slate-600 space-y-2 mb-4">
                   <li>
-                    Cleaned and explored the dataset (EDA), engineered a few
-                    meaningful features, and built a baseline churn model.
+                    End-to-end project: EDA, Data Cleaning, Segmentation and Business Insights with Python (Pandas) 
                   </li>
                   <li>
-                    Focused on interpretability: connected model signals to churn
-                    drivers, segments, and retention actions.
-                  </li>
-                  <li>
-                    Outcome: identified top churn factors and suggested retention actions for high-risk segments.
+                    Identified key churn drivers and customer segments; communicated insights with clear visualizations and narrative.
                   </li>
                 </ul>
 
@@ -257,7 +259,14 @@ const Resume: React.FC = () => {
                     Data Analysis
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {["SQL", "Python", "Pandas", "NumPy", "Data Cleaning", "EDA"].map((s) => (
+                    {[
+                      "SQL",
+                      "Python",
+                      "Pandas",
+                      "NumPy",
+                      "Data Cleaning",
+                      "EDA",
+                    ].map((s) => (
                       <span
                         key={s}
                         className="bg-white/10 px-3 py-1 rounded-lg text-xs font-medium"
@@ -273,28 +282,7 @@ const Resume: React.FC = () => {
                     Visualization & Reporting
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {["Power BI", "Matplotlib", "Seaborn", "Excel"].map(
-                      (s) => (
-                        <span
-                          key={s}
-                          className="bg-white/10 px-3 py-1 rounded-lg text-xs font-medium"
-                        >
-                          {s}
-                        </span>
-                      )
-                    )}
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">
-                    ML Foundations
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {[
-                      "Scikit-learn",
-                      "Feature Engineering (basics)",
-                    ].map((s) => (
+                    {["Power BI", "Matplotlib", "Seaborn", "Excel"].map((s) => (
                       <span
                         key={s}
                         className="bg-white/10 px-3 py-1 rounded-lg text-xs font-medium"
@@ -307,10 +295,10 @@ const Resume: React.FC = () => {
 
                 <div>
                   <h4 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">
-                    Tools
+                    ML Foundations
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {["Git", "GitHub", "Jupyter", "VS Code", "MySQL Workbench"].map(
+                    {["Scikit-learn", "Feature Engineering (basics)"].map(
                       (s) => (
                         <span
                           key={s}
@@ -318,8 +306,30 @@ const Resume: React.FC = () => {
                         >
                           {s}
                         </span>
-                      )
+                      ),
                     )}
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">
+                    Tools
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Git",
+                      "GitHub",
+                      "Jupyter",
+                      "VS Code",
+                      "MySQL Workbench",
+                    ].map((s) => (
+                      <span
+                        key={s}
+                        className="bg-white/10 px-3 py-1 rounded-lg text-xs font-medium"
+                      >
+                        {s}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
