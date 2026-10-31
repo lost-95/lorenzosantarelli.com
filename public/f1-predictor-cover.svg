@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="F1 Predictor">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d1013"/>
+      <stop offset="0.55" stop-color="#16181f"/>
+      <stop offset="1" stop-color="#0d0e12"/>
+    </linearGradient>
+    <pattern id="check" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#ffffff"/>
+      <rect x="10" y="10" width="10" height="10" fill="#ffffff"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- checkered flag strip -->
+  <rect x="640" y="0" width="160" height="500" fill="url(#check)" opacity="0.06"/>
+  <!-- racing line -->
+  <path d="M-20 470 C 200 450, 300 300, 460 300 S 720 170, 820 110" fill="none" stroke="#e10600" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <path d="M-20 490 C 200 470, 310 325, 465 322 S 725 195, 820 135" fill="none" stroke="#e10600" stroke-width="2" opacity="0.35"/>
+  <!-- title (kept below the card's category badge) -->
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="72" y="150" width="76" height="48" rx="8" fill="#e10600"/>
+    <text x="110" y="184" text-anchor="middle" font-size="30" font-weight="800" font-style="italic" fill="#ffffff">F1</text>
+    <text x="164" y="188" font-size="42" font-weight="800" fill="#eceef3">Predictor</text>
+    <text x="72" y="236" font-size="19" fill="#8b91a1">Race predictions · Weather · Fantasy F1</text>
+  </g>
+  <!-- win-probability bars -->
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" fill="#eceef3">
+    <text x="72" y="294">VER</text><rect x="124" y="280" width="300" height="18" rx="4" fill="#3671C6"/>
+    <text x="72" y="326">ANT</text><rect x="124" y="312" width="212" height="18" rx="4" fill="#27F4D2"/>
+    <text x="72" y="358">HAM</text><rect x="124" y="344" width="116" height="18" rx="4" fill="#E8002D"/>
+    <text x="72" y="390">NOR</text><rect x="124" y="376" width="80" height="18" rx="4" fill="#FF8000"/>
+  </g>
+</svg>

@@ -39,12 +39,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
         <div className="pt-4 border-t border-gray-100 mt-auto flex justify-between items-center">
           <span className="text-xs font-medium text-gray-500">Business Impact: {project.impact.split(' ').slice(0,3).join(' ')}...</span>
-          <button className="text-primary font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
-            View Details 
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </button>
+          {project.liveUrl ? (
+            // plain <a> (not a router Link): the live app is served outside this React app
+            <a
+              href={project.liveUrl}
+              className="bg-primary text-white font-semibold text-sm px-4 py-2 rounded-lg flex items-center gap-1 hover:gap-2 transition-all"
+            >
+              Open live app
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          ) : (
+            <button className="text-primary font-semibold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+              View Details
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </button>
+          )}
         </div>
       </div>
     </div>

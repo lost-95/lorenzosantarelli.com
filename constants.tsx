@@ -22,6 +22,22 @@ export const SKILLS: Skill[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: "f1-predictor",
+    title: "F1 Race Predictor & Fantasy F1",
+    category: "Machine Learning / Web App",
+    businessProblem: "Predicting the finishing order of the next Formula 1 Grand Prix and pricing drivers and teams for a fantasy league, using 25 years of results, race-day weather and race pace.",
+    dataset: "Jolpica F1 API (Ergast successor, same schema as the Kaggle F1 dataset) 2001–today, Open-Meteo ERA5 race-day weather, lap-by-lap timing since 2018.",
+    tools: ["Python", "LightGBM", "Pandas", "FastAPI", "GitHub Actions", "JavaScript"],
+    methodology: "LightGBM LambdaRank models (before and after qualifying, plus qualifying order) validated walk-forward season by season; Plackett-Luce simulation for calibrated win/podium probabilities; Elo ratings, team lineage and weather features.",
+    insights: [
+      "Out of sample (2016–today) the post-qualifying model picks the winner in 57% of races, ahead of the 'pole sitter wins' baseline.",
+      "Recalibrating the simulation on fantasy points instead of the race winner removed a systematic bias against midfield drivers."
+    ],
+    impact: "Live web app updated automatically every race weekend by a scheduled data and retraining pipeline, in Italian, English and Spanish.",
+    image: "/f1-predictor-cover.svg",
+    liveUrl: "/f1-predictor/"
+  },
+  {
     id: "customer-churn-banking",
     title: "Customer Churn Prediction (Banking)",
     category: "Machine Learning / Business Analytics",

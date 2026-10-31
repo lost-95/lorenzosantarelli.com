@@ -10,6 +10,8 @@ export interface Project {
   insights: string[];
   impact: string;
   image: string;
+  /** Link to a live demo. Same-domain paths (e.g. "/f1-predictor/") are served outside this React app. */
+  liveUrl?: string;
 }
 
 export interface BlogPost {

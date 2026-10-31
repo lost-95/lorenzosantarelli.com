@@ -1,4 +1,13 @@
 
+# F1 Predictor web app: a separate Netlify site (published from the `site` branch of
+# lost-95/f1-predictor) served on this domain under /f1-predictor/. Must come before the
+# SPA fallback below. "/f1-predictor" without the slash is handled by the app itself.
+[[redirects]]
+  from = "/f1-predictor/*"
+  to = "https://lorenzosantarelli-f1.netlify.app/:splat"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
