@@ -1,6 +1,6 @@
 // Cloudflare Worker for lorenzosantarelli.com.
 // Every push to `main` is built (`npm run build`) and deployed (`npx wrangler deploy`)
-// by Cloudflare Workers Builds.
+// by Cloudflare Workers Builds. Other branches get a preview (`npx wrangler preview`).
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "lorenzosantarelli-com",
@@ -14,5 +14,7 @@
     // these paths are handled by worker/index.js before looking at the static files
     "run_worker_first": ["/f1-predictor", "/f1-predictor/*"]
   },
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
+  // required by `wrangler preview` (branch previews); empty = same settings as production
+  "previews": {}
 }
