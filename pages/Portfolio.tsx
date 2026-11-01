@@ -1,54 +1,94 @@
-
 import React from 'react';
 import Section from '../components/UI/Section';
-import ProjectCard from '../components/Portfolio/ProjectCard';
-import { PROJECTS } from '../constants';
+import { ExternalIcon, GitHubIcon } from '../components/UI/Icons';
+import { GITHUB } from '../content';
+import { useLang, usePageTitle } from '../i18n';
 
 const Portfolio: React.FC = () => {
+  const { t } = useLang();
+  const p = t.projectsPage;
+  usePageTitle(t.pageTitles.projects);
+
   return (
-    <div className="pt-24 fade-in">
-      <Section 
-        title="Technical Portfolio" 
-        subtitle="End-to-end data solutions solving complex business problems."
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {PROJECTS.map((project) => (
-            <div key={project.id}>
-              <ProjectCard project={project} />
-              
-              {/* Optional detailed summary visible only on larger screens for context */}
-              <div className="mt-6 px-4 hidden lg:block">
-                <div className="grid grid-cols-2 gap-6">
+    <div className="pt-20 fade-in">
+      <Section title={p.title} subtitle={p.subtitle} as="h1">
+        <div className="space-y-10 max-w-5xl mx-auto">
+          {t.projects.map((project) => (
+            <article key={project.id} id={project.id} className="scroll-mt-28 bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden">
+              {project.image && (
+                <img src={project.image} alt="" width={1200} height={400} loading="lazy" className="w-full h-40 md:h-56 object-cover" />
+              )}
+              <div className="p-6 md:p-10">
+                <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-primary mb-2">{project.kind}</p>
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">{project.title}</h2>
+                <p className="text-lg text-slate-600 mb-8">{project.summary}</p>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div>
-                    <h4 className="text-xs font-bold text-gray-400 uppercase mb-2">Methodology</h4>
-                    <p className="text-sm text-gray-600 line-clamp-2">{project.methodology}</p>
+                    <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">{p.problem}</h3>
+                    <p className="text-slate-700 leading-relaxed">{project.problem}</p>
                   </div>
-                  <div>
-                    <h4 className="text-xs font-bold text-gray-400 uppercase mb-2">Key Insight</h4>
-                    <p className="text-sm text-gray-600 line-clamp-2">{project.insights[0]}</p>
+                  <div className="md:col-span-2">
+                    <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">{p.solution}</h3>
+                    <ul className="list-disc list-outside ml-4 text-slate-700 space-y-1.5 leading-relaxed">
+                      {project.solution.map((s) => (
+                        <li key={s}>{s}</li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
+
+                <div className="mt-8 p-5 rounded-2xl bg-primary/5 border border-primary/10">
+                  <h3 className="text-xs font-bold text-primary uppercase tracking-widest mb-1">{p.result}</h3>
+                  <p className="text-slate-800 leading-relaxed">{project.result}</p>
+                </div>
+
+                <div className="mt-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                  <ul className="flex flex-wrap gap-2" aria-label="Tools">
+                    {project.tools.map((tool) => (
+                      <li key={tool} className="text-[11px] font-semibold text-slate-500 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded">
+                        {tool}
+                      </li>
+                    ))}
+                  </ul>
+                  {project.links.length > 0 && (
+                    <div className="flex flex-wrap gap-3">
+                      {project.links.map((link, i) =>
+                        // plain <a>: /f1-predictor/ is served outside this React app
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                          className={`inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-lg transition-colors ${
+                            i === 0 ? 'bg-primary text-white hover:bg-blue-700' : 'border border-slate-200 text-slate-700 hover:border-primary hover:text-primary'
+                          }`}
+                        >
+                          {link.label}
+                          {link.external && <ExternalIcon />}
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </div>
+                {project.note && <p className="mt-4 text-sm text-slate-400 italic">{project.note}</p>}
               </div>
-            </div>
+            </article>
           ))}
         </div>
 
-        {/* GitHub Contribution CTA */}
-        <div className="mt-24 p-8 bg-gray-50 border border-gray-200 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="mt-16 max-w-5xl mx-auto p-8 bg-slate-50 border border-slate-200 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="max-w-xl">
-            <h3 className="text-2xl font-bold mb-2">Looking for the source code?</h3>
-            <p className="text-gray-600">All my projects are open-source and documented on GitHub. Explore my Jupyter notebooks, SQL scripts, and Power BI templates.</p>
+            <h2 className="text-2xl font-bold mb-2">{p.githubTitle}</h2>
+            <p className="text-slate-600">{p.githubText}</p>
           </div>
-          <a 
-            href="https://github.com/lost-95" 
-            target="_blank" 
+          <a
+            href={GITHUB}
+            target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap bg-tech-dark hover:bg-black text-white px-8 py-4 rounded-lg font-bold flex items-center gap-2 transition-all"
+            className="whitespace-nowrap bg-tech-dark hover:bg-black text-white px-7 py-4 rounded-xl font-bold inline-flex items-center gap-2 transition-colors"
           >
-            Explore on GitHub
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.412-4.041-1.412-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
+            {p.githubCta}
+            <GitHubIcon />
           </a>
         </div>
       </Section>

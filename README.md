@@ -1,20 +1,25 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# lorenzosantarelli.com
 
-# Run and deploy your AI Studio app
+Personal portfolio of Lorenzo Santarelli – AI & Automation Specialist | IT Manager.
 
-This contains everything you need to run your app locally.
+React + TypeScript + Vite + Tailwind CSS. English by default, Italian via the EN/IT switch (or `?lang=it`).
 
-View your app in AI Studio: https://ai.studio/apps/drive/1GH2Of4vBNSknFufdPNa0rrRvsLfTNHNy
+## Run locally
 
-## Run Locally
+```bash
+npm install
+npm run dev        # http://localhost:3000
+npm run typecheck
+npm run build      # outputs dist/
+```
 
-**Prerequisites:**  Node.js
+## Content
 
+- All copy (both languages) lives in `content.ts`. Keep it in sync with the CVs.
+- CVs: `public/Lorenzo_Santarelli_CV_EN.pdf` and `public/Lorenzo_Santarelli_CV_IT.pdf`
+  (`public/cv-lorenzo-santarelli.pdf` is kept as a copy of the English CV for old links).
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Deploy
+
+Cloudflare Workers Builds deploys every push to `main` (`npm run build`, then `npx wrangler deploy`).
+`worker/index.js` serves `dist/` and proxies `/f1-predictor/*` to the F1 Predictor app on Netlify.
