@@ -41,7 +41,7 @@ const en: Content = {
   location: 'Civitanova Marche, Italy',
   cvFile: CV_EN,
   home: {
-    badge: 'Open to AI Automation and Digital Transformation roles · Remote / EU',
+    badge: 'Applied AI · Process automation · IT management',
     intro:
       'I work across IT management, automation and applied AI. I develop Python tools and practical technology solutions that simplify business operations and improve existing systems.',
     ctaProjects: 'View projects',
@@ -315,7 +315,7 @@ const it: Content = {
   location: 'Civitanova Marche (MC)',
   cvFile: CV_IT,
   home: {
-    badge: 'Disponibile per ruoli in AI Automation e Digital Transformation · Remoto / UE',
+    badge: 'AI applicata · Automazione dei processi · Gestione IT',
     intro:
       'Mi occupo di gestione IT, automazione e applicazione dell’AI ai processi aziendali. Sviluppo strumenti Python e soluzioni tecnologiche per semplificare le attività operative e migliorare i sistemi esistenti.',
     ctaProjects: 'Vedi i progetti',

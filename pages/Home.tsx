@@ -25,9 +25,16 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div className="lg:col-span-7 text-center lg:text-left order-2 lg:order-1">
-              <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-100 shadow-sm mb-7">
-                <span className="flex h-2 w-2 rounded-full bg-[#10B981]" aria-hidden="true" />
-                <span className="text-[11px] font-bold text-slate-500 uppercase tracking-[0.12em]">{t.home.badge}</span>
+              <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-2xl sm:rounded-full bg-white border border-slate-100 shadow-sm mb-7">
+                <span className="hidden sm:flex h-2 w-2 rounded-full bg-primary/60" aria-hidden="true" />
+                <span className="text-[10px] sm:text-[11px] font-bold text-slate-500 uppercase tracking-[0.08em] sm:tracking-[0.12em]">
+                  {t.home.badge.split(' · ').map((item, i) => (
+                    <React.Fragment key={item}>
+                      {i > 0 && ' · '}
+                      <span className="whitespace-nowrap">{item}</span>
+                    </React.Fragment>
+                  ))}
+                </span>
               </p>
 
               <p className="text-lg sm:text-xl md:text-2xl font-bold text-gradient tracking-tight mb-3">
@@ -38,7 +45,7 @@ const Home: React.FC = () => {
                   </React.Fragment>
                 ))}
               </p>
-              <h1 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter leading-[0.95] mb-7">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-slate-900 tracking-tight leading-[0.95] mb-7">
                 Lorenzo <br className="hidden sm:block" />
                 Santarelli
               </h1>
