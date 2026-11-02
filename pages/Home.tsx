@@ -40,7 +40,7 @@ const Home: React.FC = () => {
               <p className="text-lg sm:text-xl md:text-2xl font-bold text-gradient tracking-tight mb-3">
                 {t.title.split(' | ').map((part, i) => (
                   <React.Fragment key={part}>
-                    {i > 0 && ' | '}
+                    {i > 0 && ' • '}
                     <span className="whitespace-nowrap">{part}</span>
                   </React.Fragment>
                 ))}
