@@ -16,12 +16,12 @@ const NEXUX = 'https://nexuxstudio.it/';
 
 const en: Content = {
   meta: {
-    title: 'Lorenzo Santarelli | AI & Automation Specialist | IT Manager',
+    title: 'Lorenzo Santarelli | AI & Automation Specialist | IT Manager | Machine Learning',
     description:
-      'Lorenzo Santarelli – AI & Automation Specialist and IT Manager. Python tools, process automation, LLM integrations and IT management. Projects, experience and CV.',
+      'Lorenzo Santarelli – AI & Automation Specialist and IT Manager. Python tools, machine learning, LLM integrations, process automation and IT management. Projects, experience and CV.',
   },
   pageTitles: {
-    home: 'Lorenzo Santarelli | AI & Automation Specialist | IT Manager',
+    home: 'Lorenzo Santarelli | AI & Automation Specialist | IT Manager | Machine Learning',
     experience: 'Experience | Lorenzo Santarelli',
     projects: 'Projects | Lorenzo Santarelli',
     contact: 'Contact | Lorenzo Santarelli',
@@ -37,13 +37,13 @@ const en: Content = {
     switchTo: 'Leggi in italiano',
     skip: 'Skip to content',
   },
-  title: 'AI & Automation Specialist | IT Manager',
+  title: 'AI & Automation Specialist | IT Manager | Machine Learning',
   location: 'Civitanova Marche, Italy',
   cvFile: CV_EN,
   home: {
-    badge: 'Applied AI · Process automation · IT management',
+    badge: 'Machine learning · AI & automation · IT management',
     intro:
-      'I work across IT management, automation and applied AI. I develop Python tools and practical technology solutions that simplify business operations and improve existing systems.',
+      'I work across IT management, automation and AI. I build Python tools, machine learning models and LLM integrations that simplify business operations, and I am growing towards AI engineering.',
     ctaProjects: 'View projects',
     ctaCv: 'Download CV',
     focusTitle: 'What I work on',
@@ -54,12 +54,12 @@ const en: Content = {
         text: 'Repetitive manual work – reports, data reconciliation, lead handling – replaced with Python tools and n8n workflows.',
       },
       {
-        title: 'Applied AI',
-        text: 'LLMs, RAG and AI agents connected to real business processes, with human review where a decision matters.',
+        title: 'LLMs and AI agents',
+        text: 'LLMs, RAG and AI agents built into everyday business workflows, with a person approving the important steps.',
       },
       {
-        title: 'Software development',
-        text: 'Web apps for the local network, API integrations and maintenance of legacy business software.',
+        title: 'Machine learning',
+        text: 'Models in Python, from regression and classification to LightGBM ranking, trained and validated on real data – as in my F1 race predictor.',
       },
       {
         title: 'IT management',
@@ -67,15 +67,15 @@ const en: Content = {
       },
     ],
     workTitle: 'Selected work',
-    workSubtitle: 'Projects and case studies, described with what was actually built.',
+    workSubtitle: 'Personal projects and case studies from my work.',
     allProjects: 'See all projects',
     readMore: 'Read the case study',
     skillsTitle: 'Technical skills',
     skillsSubtitle: 'What I use in my work and projects.',
     nextTitle: 'Where I’m heading',
     nextText: [
-      'I want to keep building AI solutions inside business processes: automations that save real time, LLM integrations that people actually use, and better internal systems.',
-      'I’m looking for AI Automation and Digital Transformation roles, ideally in an international, remote-first team, with room to grow towards technical project management.',
+      'My goal is to become an AI Engineer. I keep studying and building – machine learning models, LLM-based applications and the data pipelines behind them – and I bring what I learn into my daily work.',
+      'I’m interested in teams where I can grow on the technical side of AI: building, evaluating and deploying models and LLM-based tools.',
     ],
     nextCta: 'Get in touch',
   },
@@ -88,6 +88,8 @@ const en: Content = {
         'LLM integration',
         'RAG with vector databases',
         'Regression, classification and decision tree models',
+        'Gradient boosting (LightGBM)',
+        'Feature engineering',
         'Model training and evaluation',
       ],
     },
@@ -110,7 +112,7 @@ const en: Content = {
   ],
   experiencePage: {
     title: 'Experience',
-    subtitle: 'AI & Automation Specialist | IT Manager',
+    subtitle: 'AI & Automation Specialist | IT Manager | Machine Learning',
     downloadEn: 'CV in English (PDF)',
     downloadIt: 'CV in Italian (PDF)',
     experience: 'Work experience',
@@ -232,7 +234,7 @@ const en: Content = {
         'Automated emails and real-time phone notifications for the owner, with human approval at set steps.',
       ],
       result:
-        'A more organised and timely first-contact process that depends less on manual work, delivered with a working method for following up new contacts.',
+        'New contacts get a faster, more organised first reply with less manual work, and the owner has a clear method for following them up.',
       tools: ['n8n', 'Telegram', 'WhatsApp', 'Google Workspace', 'LLM APIs'],
       links: [{ label: 'nexuxstudio.it', href: NEXUX, external: true }],
     },
@@ -279,7 +281,7 @@ const en: Content = {
     elsewhere: 'Also on',
   },
   footer: {
-    tagline: 'AI & Automation Specialist | IT Manager. Python tools, process automation, applied AI and IT management.',
+    tagline: 'AI & Automation Specialist | IT Manager | Machine Learning. Python tools, machine learning, LLM integrations and IT management.',
     explore: 'Explore',
     connect: 'Connect',
     rights: 'Lorenzo Santarelli',
@@ -290,12 +292,12 @@ const en: Content = {
 
 const it: Content = {
   meta: {
-    title: 'Lorenzo Santarelli | AI & Automation Specialist | IT Manager',
+    title: 'Lorenzo Santarelli | AI & Automation Specialist | IT Manager | Machine Learning',
     description:
-      'Lorenzo Santarelli – AI & Automation Specialist e IT Manager. Strumenti Python, automazione dei processi, integrazioni LLM e gestione IT. Progetti, esperienza e CV.',
+      'Lorenzo Santarelli – AI & Automation Specialist e IT Manager. Strumenti Python, machine learning, integrazioni LLM, automazione dei processi e gestione IT. Progetti, esperienza e CV.',
   },
   pageTitles: {
-    home: 'Lorenzo Santarelli | AI & Automation Specialist | IT Manager',
+    home: 'Lorenzo Santarelli | AI & Automation Specialist | IT Manager | Machine Learning',
     experience: 'Esperienza | Lorenzo Santarelli',
     projects: 'Progetti | Lorenzo Santarelli',
     contact: 'Contatti | Lorenzo Santarelli',
@@ -311,13 +313,13 @@ const it: Content = {
     switchTo: 'Read in English',
     skip: 'Vai al contenuto',
   },
-  title: 'AI & Automation Specialist | IT Manager',
+  title: 'AI & Automation Specialist | IT Manager | Machine Learning',
   location: 'Civitanova Marche (MC)',
   cvFile: CV_IT,
   home: {
-    badge: 'AI applicata · Automazione dei processi · Gestione IT',
+    badge: 'Machine learning · AI e automazione · Gestione IT',
     intro:
-      'Mi occupo di gestione IT, automazione e applicazione dell’AI ai processi aziendali. Sviluppo strumenti Python e soluzioni tecnologiche per semplificare le attività operative e migliorare i sistemi esistenti.',
+      'Mi occupo di gestione IT, automazione e intelligenza artificiale. Sviluppo strumenti Python, modelli di machine learning e integrazioni LLM che semplificano le attività aziendali, e sto crescendo verso l’AI engineering.',
     ctaProjects: 'Vedi i progetti',
     ctaCv: 'Scarica il CV',
     focusTitle: 'Di cosa mi occupo',
@@ -328,12 +330,12 @@ const it: Content = {
         text: 'Lavoro manuale e ripetitivo – report, riconciliazioni, gestione dei lead – sostituito con strumenti Python e workflow n8n.',
       },
       {
-        title: 'AI applicata',
-        text: 'LLM, RAG e AI agent collegati a processi aziendali reali, con supervisione umana dove una decisione conta.',
+        title: 'LLM e AI agent',
+        text: 'LLM, RAG e AI agent integrati nei processi di tutti i giorni, con una persona che approva i passaggi importanti.',
       },
       {
-        title: 'Sviluppo software',
-        text: 'Web app per la rete locale, integrazioni API e manutenzione di software gestionale legacy.',
+        title: 'Machine learning',
+        text: 'Modelli in Python, dalla regressione e classificazione al ranking con LightGBM, addestrati e validati su dati reali – come nel mio F1 race predictor.',
       },
       {
         title: 'Gestione IT',
@@ -341,15 +343,15 @@ const it: Content = {
       },
     ],
     workTitle: 'Lavori selezionati',
-    workSubtitle: 'Progetti e casi di studio, descritti per quello che è stato realizzato davvero.',
+    workSubtitle: 'Progetti personali e casi di studio dal mio lavoro.',
     allProjects: 'Tutti i progetti',
     readMore: 'Leggi il caso di studio',
     skillsTitle: 'Competenze tecniche',
     skillsSubtitle: 'Quello che uso nel lavoro e nei progetti.',
     nextTitle: 'Dove voglio arrivare',
     nextText: [
-      'Voglio continuare a costruire soluzioni AI dentro i processi aziendali: automazioni che fanno risparmiare tempo vero, integrazioni LLM che le persone usano davvero e sistemi interni migliori.',
-      'Cerco ruoli in AI Automation e Digital Transformation, idealmente in un team internazionale e remote-first, con spazio per crescere verso il technical project management.',
+      'Il mio obiettivo è diventare AI Engineer. Continuo a studiare e a costruire – modelli di machine learning, applicazioni basate su LLM e le pipeline di dati che le alimentano – e porto quello che imparo nel lavoro di tutti i giorni.',
+      'Mi interessano team in cui crescere sul lato tecnico dell’AI: costruire, valutare e mettere in produzione modelli e strumenti basati su LLM.',
     ],
     nextCta: 'Contattami',
   },
@@ -362,6 +364,8 @@ const it: Content = {
         'Integrazione di LLM',
         'RAG con database vettoriali',
         'Modelli di regressione, classificazione e alberi decisionali',
+        'Gradient boosting (LightGBM)',
+        'Feature engineering',
         'Addestramento e valutazione dei modelli',
       ],
     },
@@ -384,7 +388,7 @@ const it: Content = {
   ],
   experiencePage: {
     title: 'Esperienza',
-    subtitle: 'AI & Automation Specialist | IT Manager',
+    subtitle: 'AI & Automation Specialist | IT Manager | Machine Learning',
     downloadEn: 'CV in inglese (PDF)',
     downloadIt: 'CV in italiano (PDF)',
     experience: 'Esperienza professionale',
@@ -506,7 +510,7 @@ const it: Content = {
         'Email automatiche e notifiche in tempo reale per il titolare, con approvazione umana nei passaggi previsti.',
       ],
       result:
-        'Un processo di primo contatto più organizzato e tempestivo, meno dipendente dal lavoro manuale, consegnato insieme a un metodo per seguire i nuovi contatti.',
+        'I nuovi contatti ricevono una prima risposta più rapida e ordinata, con meno lavoro manuale, e il titolare ha un metodo chiaro per seguirli.',
       tools: ['n8n', 'Telegram', 'WhatsApp', 'Google Workspace', 'API LLM'],
       links: [{ label: 'nexuxstudio.it', href: NEXUX, external: true }],
     },
@@ -550,7 +554,7 @@ const it: Content = {
     elsewhere: 'Mi trovi anche su',
   },
   footer: {
-    tagline: 'AI & Automation Specialist | IT Manager. Strumenti Python, automazione dei processi, AI applicata e gestione IT.',
+    tagline: 'AI & Automation Specialist | IT Manager | Machine Learning. Strumenti Python, machine learning, integrazioni LLM e gestione IT.',
     explore: 'Esplora',
     connect: 'Contatti',
     rights: 'Lorenzo Santarelli',
