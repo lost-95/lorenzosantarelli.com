@@ -99,7 +99,7 @@ const en: Content = {
     },
     {
       category: 'Data & API Integration',
-      items: ['Analysis, cleaning and manipulation of large datasets', 'SQL', 'Excel', 'API integration', 'Google Workspace integration'],
+      items: ['Data cleaning and analysis with pandas', 'SQL', 'Excel', 'API integration', 'Google Workspace integration'],
     },
     {
       category: 'IT Infrastructure',
@@ -149,7 +149,7 @@ const en: Content = {
         'Added automated lead scoring and classification, with different operational paths depending on the prospect.',
         'Set up automated emails and real-time notifications on the owner’s phone, so new contacts get a timely reply.',
         'Defined a first-contact procedure with human review and approval at set steps.',
-        'Delivered the tools together with a working method to organise, assess and follow up new contacts consistently. I also designed and built the studio’s website.',
+        'Handed over the tools with a simple routine for sorting, assessing and following up new contacts. I also designed and built the studio’s website.',
       ],
       tags: ['n8n', 'Telegram', 'WhatsApp', 'Google Workspace', 'LLM APIs'],
     },
@@ -170,7 +170,7 @@ const en: Content = {
       dates: 'Mar 2023 – Jul 2025',
       bullets: [
         'Coordinated a small team – a designer, a developer and a salesperson – setting priorities and deadlines.',
-        'Delivered web apps, landing pages and showcase websites to improve clients’ online presence and conversions.',
+        'Delivered web apps, landing pages and showcase websites for small-business clients.',
         'Turned client requests into tasks and followed them through to delivery.',
       ],
       tags: ['Project coordination', 'Web apps', 'Landing pages'],
@@ -248,7 +248,7 @@ const en: Content = {
         'Rebuilt the decoder from scratch in Python.',
         'Served it as a web app reachable from the local network.',
       ],
-      result: 'A simpler and faster way to read merchandise barcodes.',
+      result: 'The decoder now runs as a Python web app that colleagues open from the browser on the company network.',
       tools: ['Python', 'Web app', 'Local network'],
       links: [],
       note: 'Internal tool: no code or company data is shown.',
@@ -273,7 +273,7 @@ const en: Content = {
   contactPage: {
     title: 'Contact',
     subtitle: 'The quickest way to reach me is email.',
-    text: 'Based in Civitanova Marche, Italy, and open to remote roles. I usually reply within a couple of days.',
+    text: 'Based in Civitanova Marche, Italy, and open to remote, hybrid and on-site work. I usually reply within a couple of days.',
     emailCta: 'Write me an email',
     copy: 'Copy address',
     copied: 'Copied',
@@ -285,7 +285,7 @@ const en: Content = {
     explore: 'Explore',
     connect: 'Connect',
     rights: 'Lorenzo Santarelli',
-    remote: 'Open to remote opportunities',
+    remote: 'Open to remote, hybrid and on-site work',
   },
   notFound: { title: 'This page doesn’t exist.', back: 'Back to the home page' },
 };
@@ -375,7 +375,7 @@ const it: Content = {
     },
     {
       category: 'Dati & Integrazione API',
-      items: ['Analisi, pulizia e manipolazione di dataset di grandi dimensioni', 'SQL', 'Excel', 'Integrazione API', 'Integrazione Google Workspace'],
+      items: ['Pulizia e analisi dei dati con pandas', 'SQL', 'Excel', 'Integrazione API', 'Integrazione Google Workspace'],
     },
     {
       category: 'Infrastruttura IT',
@@ -425,7 +425,7 @@ const it: Content = {
         'Ho introdotto valutazione e classificazione automatica dei lead, con percorsi operativi diversi in base al potenziale cliente.',
         'Ho integrato email automatiche e notifiche in tempo reale sullo smartphone del titolare, per rispondere subito ai nuovi contatti.',
         'Ho definito una procedura per i primi contatti con supervisione e approvazione umana nei passaggi previsti.',
-        'Ho consegnato gli strumenti insieme a un metodo operativo per organizzare, valutare e seguire i nuovi contatti in modo sistematico. Ho anche progettato e realizzato il sito dello studio.',
+        'Ho consegnato gli strumenti insieme a una procedura semplice per smistare, valutare e ricontattare i nuovi contatti. Ho anche progettato e realizzato il sito dello studio.',
       ],
       tags: ['n8n', 'Telegram', 'WhatsApp', 'Google Workspace', 'API LLM'],
     },
@@ -446,7 +446,7 @@ const it: Content = {
       dates: 'mar 2023 – lug 2025',
       bullets: [
         'Coordinavo un piccolo team – un designer, uno sviluppatore e un commerciale – definendo priorità e scadenze.',
-        'Realizzavamo web app, landing page e siti vetrina per migliorare la presenza online e le conversioni delle aziende clienti.',
+        'Realizzavamo web app, landing page e siti vetrina per piccole aziende clienti.',
         'Trasformavo le richieste dei clienti in attività e le seguivo fino alla consegna.',
       ],
       tags: ['Coordinamento progetti', 'Web app', 'Landing page'],
@@ -521,7 +521,7 @@ const it: Content = {
       summary: 'Lo strumento aziendale per decodificare i codici a barre, ricostruito da zero in Python come web app sulla rete locale.',
       problem: 'La lettura dei codici a barre della merce doveva diventare più semplice e veloce per chi la fa ogni giorno.',
       solution: ['Ho ricostruito il decoder da zero in Python.', 'L’ho reso disponibile come web app accessibile dalla rete locale.'],
-      result: 'Un modo più semplice e veloce per leggere i codici a barre della merce.',
+      result: 'Il decoder ora è una web app Python che i colleghi aprono dal browser sulla rete aziendale.',
       tools: ['Python', 'Web app', 'Rete locale'],
       links: [],
       note: 'Strumento interno: non vengono mostrati codice o dati aziendali.',
@@ -546,7 +546,7 @@ const it: Content = {
   contactPage: {
     title: 'Contatti',
     subtitle: 'Il modo più rapido per raggiungermi è l’email.',
-    text: 'Vivo a Civitanova Marche e sono disponibile per ruoli da remoto. Di solito rispondo entro un paio di giorni.',
+    text: 'Vivo a Civitanova Marche e sono disponibile per lavoro da remoto, ibrido o in presenza. Di solito rispondo entro un paio di giorni.',
     emailCta: 'Scrivimi un’email',
     copy: 'Copia indirizzo',
     copied: 'Copiato',
@@ -558,7 +558,7 @@ const it: Content = {
     explore: 'Esplora',
     connect: 'Contatti',
     rights: 'Lorenzo Santarelli',
-    remote: 'Disponibile per opportunità da remoto',
+    remote: 'Disponibile da remoto, in ibrido o in presenza',
   },
   notFound: { title: 'Questa pagina non esiste.', back: 'Torna alla home' },
 };
