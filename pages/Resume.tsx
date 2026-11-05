@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../components/UI/Section';
 import { DownloadIcon, ExternalIcon, MailIcon } from '../components/UI/Icons';
-import { CV_EN, CV_IT, EMAIL, PHONE } from '../content';
+import { CV_EN, CV_IT, EMAIL } from '../content';
 import { useLang, usePageTitle } from '../i18n';
 
 const Resume: React.FC = () => {
@@ -21,7 +21,6 @@ const Resume: React.FC = () => {
                 <MailIcon className="w-4 h-4" />
                 {EMAIL}
               </a>
-              <a href={`tel:${PHONE.replace(/\s/g, '')}`} className="hover:text-primary">{PHONE}</a>
               <span>{t.location}</span>
             </div>
           </div>

@@ -3,7 +3,6 @@
 import { Content, Lang } from './types';
 
 export const EMAIL = 'lorenzosantarelli95@gmail.com';
-export const PHONE = '+39 335 672 0071';
 export const LINKEDIN = 'https://www.linkedin.com/in/lorenzo-santarelli/';
 export const GITHUB = 'https://github.com/lost-95';
 export const CV_EN = '/Lorenzo_Santarelli_CV_EN.pdf';
@@ -273,7 +272,7 @@ const en: Content = {
   contactPage: {
     title: 'Contact',
     subtitle: 'The quickest way to reach me is email.',
-    text: 'Based in Civitanova Marche, Italy, and open to remote, hybrid and on-site work. I usually reply within a couple of days.',
+    text: 'Based in Civitanova Marche, Italy. I usually reply within a couple of days.',
     emailCta: 'Write me an email',
     copy: 'Copy address',
     copied: 'Copied',
@@ -285,7 +284,6 @@ const en: Content = {
     explore: 'Explore',
     connect: 'Connect',
     rights: 'Lorenzo Santarelli',
-    remote: 'Open to remote, hybrid and on-site work',
   },
   notFound: { title: 'This page doesn’t exist.', back: 'Back to the home page' },
 };
@@ -546,7 +544,7 @@ const it: Content = {
   contactPage: {
     title: 'Contatti',
     subtitle: 'Il modo più rapido per raggiungermi è l’email.',
-    text: 'Vivo a Civitanova Marche e sono disponibile per lavoro da remoto, ibrido o in presenza. Di solito rispondo entro un paio di giorni.',
+    text: 'Vivo a Civitanova Marche. Di solito rispondo entro un paio di giorni.',
     emailCta: 'Scrivimi un’email',
     copy: 'Copia indirizzo',
     copied: 'Copiato',
@@ -558,7 +556,6 @@ const it: Content = {
     explore: 'Esplora',
     connect: 'Contatti',
     rights: 'Lorenzo Santarelli',
-    remote: 'Disponibile da remoto, in ibrido o in presenza',
   },
   notFound: { title: 'Questa pagina non esiste.', back: 'Torna alla home' },
 };

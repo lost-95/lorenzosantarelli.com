@@ -36,7 +36,6 @@ const Footer: React.FC = () => {
         </div>
         <div className="border-t border-slate-100 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-slate-400 font-semibold uppercase tracking-[0.15em]">
           <p>© {new Date().getFullYear()} {t.footer.rights}</p>
-          <p>{t.footer.remote}</p>
         </div>
       </div>
     </footer>

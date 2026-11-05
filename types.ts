@@ -114,6 +114,6 @@ export interface Content {
     subject: string;
     elsewhere: string;
   };
-  footer: { tagline: string; explore: string; connect: string; rights: string; remote: string };
+  footer: { tagline: string; explore: string; connect: string; rights: string };
   notFound: { title: string; back: string };
 }
